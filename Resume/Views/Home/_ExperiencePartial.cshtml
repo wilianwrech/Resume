@@ -1,0 +1,47 @@
+﻿@model Experience
+<div class="experience row">
+  <div class="col-md-4">
+    <h4>@Model.Institution</h4>
+    <p class="experience-period">
+      @if (!string.IsNullOrEmpty(Model.Duration))
+      {
+        @Model.Duration @:-
+      }
+      @if (Model.FinDate == null)
+      {
+        <span data-bs-toggle="tooltip" title="I was @Utils.GetMyAge(Model.IniDate) years old">@Model.IniDate.Year</span>
+      }
+      else
+      {
+        <span data-bs-toggle="tooltip" title="I was @Utils.GetMyAge(Model.IniDate) to @Utils.GetMyAge(Model.FinDate) years old">
+          @Model.IniDate.ToString("MMM yyyy").FirstCharToUpper() - @Model.FinDate.Value.ToString("MMM yyyy").FirstCharToUpper()
+        </span>
+      }
+    </p>
+  </div>
+  <div class="col-md-8">
+    <p>
+      <strong>@Model.Subject</strong>
+      <span class="hidden-phone">
+        @Html.Raw(Model.Description)
+      </span>
+      <span class="experience-details">
+        @if (!string.IsNullOrEmpty(Model.Location))
+        {
+          <span class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>@Model.Location</span>
+          </span>
+        }
+        @if (!string.IsNullOrEmpty(Model.RefLink))
+        {
+          <span class="seperator">|</span>
+          <span class="link">
+            <i class="fas fa-link"></i>
+            <a href="@Model.RefLink" target="_blank">@Model.RefLinkLabel</a>
+          </span>
+        }
+      </span>
+    </p>
+  </div>
+</div>

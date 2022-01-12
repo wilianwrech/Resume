@@ -1,0 +1,13 @@
+﻿@model Project
+<div class="col-xs-12 col-sm-12 col-md-6 col-xxl-4">
+  <figure class="effect">
+    <img src="@Url.Content(Model.Image)" alt="@Model.Name">
+    <figcaption>
+      <h3>@Model.Name</h3>
+      <div class="description">@Html.Raw(Model.Description)</div>
+      <a href="@Model.Ref" target="_blank" class="icon">
+        <i class="fas fa-external-link-alt"></i>
+      </a>
+    </figcaption>
+  </figure>
+</div>

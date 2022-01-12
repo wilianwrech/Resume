@@ -1,0 +1,48 @@
+﻿@{ 
+    var metaDescription = "I'm a senior programmer, I've worked with a lot of different technologies, my strongest ones are C#/JS/TS/CSS/HTML. I always stand for quality. I love spending time creating and structuring new solutions. I prefer to work in a team, as multiple points of view on a problem lead to a better solution.";
+    var metaImg = Url.Content("~/assets/favicon.jpg");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="title" content="@ViewData["Title"]">
+  <meta name="application-name" content="Wilian Webber Rech - Resume">
+  <meta name="theme-color" content="#293f7f">
+  <meta name="msapplication-TileColor" content="#293f7f">
+  <meta name="msapplication-TileImage" content="@metaImg">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wilian Webber Rech - Resume" />
+  <meta name="keywords" content="wilian webber rech, wilian webber, wilian rech, resume, developer, software engineer, full stack, senior, .net, dotnet, aspnet, web developer, backend developer, frontend developer">
+  <meta name="description" content="@metaDescription">
+  <meta property="og:title" content="@ViewData["Title"]" />
+  <meta property="og:description" content="@metaDescription" />
+  <meta property="og:image" content="@metaImg" />
+  <meta property="og:image:alt" content="Wilian Webber Rech">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="527">
+  <meta property="og:image:height" content="527">
+
+  <title>@ViewData["Title"]</title>
+  <link rel="icon" type="image/jpeg" href="@metaImg">
+
+  <script src="https://kit.fontawesome.com/a9e203f36d.js" crossorigin="anonymous" asp-append-version="true"></script>
+  <link rel="stylesheet" href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+  <header></header>
+  <main role="main" class="pb-3">
+    @RenderBody()
+  </main>
+  <footer></footer>
+  <script src="~/node_modules/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+  <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿@model Skill
+<li data-bs-toggle="tooltip" title="@string.Join(", ", Model.Tags)">
+  <span class="ability-title">@Model.Name</span>
+  <span class="ability-score">
+    @for (var i = 0; i < 5; i++)
+    {
+    <i class="@(Model.Score > i ? "fas": "far" ) fa-star"></i>
+    }
+  </span>
+</li>

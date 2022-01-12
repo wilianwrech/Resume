@@ -1,0 +1,495 @@
+﻿@{
+  ViewData["Title"] = "Wilian Webber Rech - Resume";
+
+  var educations = new Experience[]
+  {
+    new Experience
+    {
+      Institution  = "Jardelino Ramos",
+      IniDate      = new DateTime(2003, 2, 1),
+      FinDate      = new DateTime(2006, 12, 1),
+      Subject      = "Elementary School 1st to 4th grade",
+      Description  = "Municipal public school",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "escol.as",
+      RefLink      = "https://www.escol.as/244436-jardelino-ramos"
+    },
+    new Experience
+    {
+      Institution  = "Murialdo - Ana Rech",
+      IniDate      = new DateTime(2007, 2, 1),
+      FinDate      = new DateTime(2014, 12, 1),
+      Subject      = "Elementary/Secondary/High School 5th to 12th grade",
+      Description  = "Private school, I graduated high school, where I was very good at exact sciences, math and physics.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "colegiomurialdo.com.br",
+      RefLink      = "https://www.colegiomurialdo.com.br/ana-rech"
+    },
+    new Experience
+    {
+      Institution  = "Uniftec",
+      IniDate      = new DateTime(2011, 2, 1),
+      FinDate      = new DateTime(2015, 3, 1),
+      Subject      = "Computer technician course",
+      Description  = "In 2007, Call of Duty Modern Warfare came out, I played a lot and wrote my first lines of code creating some mods for it using C++, that was the trigger, and that's how I started my passion for programming.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "ftec.com.br",
+      RefLink      = "https://www.ftec.com.br"
+    },
+    new Experience
+    {
+      Institution  = "UCS",
+      IniDate      = new DateTime(2015, 6, 1),
+      FinDate      = new DateTime(2017, 6, 1),
+      Subject      = "Bachelor - Computer engineering",
+      Description  = "I started the bachelor's degree extremely enthusiastic, many things I wanted to learn, but I ended up being discouraged by my superior where I worked and I ended up stopping graduation.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "ucs.br",
+      RefLink      = "https://www.ucs.br"
+    }
+  };
+
+  var courses = new Experience[]
+  {
+    new Experience
+    {
+      Institution  = "Naira Cadorin's cultural institution",
+      Duration     = "30 hours",
+      IniDate      = new DateTime(2010, 1, 1),
+      Subject      = "Graphic designer",
+      Description  = "I'm not good at design, but this course taught me a little bit about Photoshop.",
+      Location     = "Caxias do Sul"
+    },
+    new Experience
+    {
+      Institution  = "Naira Cadorin's cultural institution",
+      Duration     = "30 hours",
+      IniDate      = new DateTime(2010, 1, 1),
+      Subject      = "Intermediate computing",
+      Description  = "This course didn't help much, it was about learning little things about Windows.",
+      Location     = "Caxias do Sul"
+    },
+    new Experience
+    {
+      Institution  = "Naira Cadorin's cultural institution",
+      Duration     = "30 hours",
+      IniDate      = new DateTime(2010, 1, 1),
+      Subject      = "Advanced computing",
+      Description  = "This course didn't help much, it was about learning little things about Windows.",
+      Location     = "Caxias do Sul"
+    },
+    new Experience
+    {
+      Institution  = "Uniftec",
+      Duration     = "90 hours",
+      IniDate      = new DateTime(2010, 1, 1),
+      Subject      = "Freehand, Photoshop, Fireworks, Flash, Dreamweaver",
+      Description  = "This one hasn't aged well, almost all tools are dead today, funny days building some small flash games, it reminds me of the <a class='link' href='https://genioquiz.com.br'>genioquiz</a>, back then it was hosted at http://www.lol.net.br, how nostalgic.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "ftec.com.br",
+      RefLink      = "https://www.ftec.com.br"
+    },
+    new Experience
+    {
+      Institution  = "ICNC Mania",
+      Duration     = "288 hours",
+      IniDate      = new DateTime(2011, 1, 1),
+      Subject      = "English language and culture",
+      Description  = "Most of my knowledge about English came from gaming and watching, but I also did a course when I was young.",
+      Location     = "Caxias do Sul"
+    },
+    new Experience
+    {
+      Institution  = "Effective Software",
+      Duration     = "8 hours",
+      IniDate      = new DateTime(2015, 1, 1),
+      Subject      = "Basic SQL (Oracle)",
+      Description  = "I was starting as a full stack developer as a trainee, it was my first contact with Oracle.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "effectiveerp.com.br",
+      RefLink      = "https://effectiveerp.com.br"
+    },
+    new Experience
+    {
+      Institution  = "Effective Software",
+      Duration     = "6.5 hours",
+      IniDate      = new DateTime(2016, 1, 1),
+      Subject      = "Angular JS II",
+      Description  = "You're asking yourself, \"<i>Angular JS 2? This doesn't exist.</i>\", yeahh, I know it, it was the second module of the Angular JS course, I skipped the first one.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "effectiveerp.com.br",
+      RefLink      = "https://effectiveerp.com.br"
+    },
+    new Experience
+    {
+      Institution  = "Effective Software",
+      Duration     = "¯\\_(ツ)_/¯ hours",
+      IniDate      = new DateTime(2016, 1, 1),
+      Subject      = "Tunning SQL (Oracle)",
+      Description  = "I was scammed, I was forced by my superior to hire this, my salary was R$800 and I had to pay my graduation which was around R$3000 monthly, it cost me more than one month of work back then, tough times. The professor who was teaching this was my superior's friend. I actually learned stuff, but I never got my certificate and I never really used what I learned because most of the stuff was DBA's responsibilities.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "effectiveerp.com.br",
+      RefLink      = "https://effectiveerp.com.br"
+    }
+};
+
+  var careers = new Experience[]
+  {
+    new Experience
+    {
+      Institution = "SerraComm Security Equipament",
+      IniDate     = new DateTime(2013, 8, 1),
+      FinDate     = new DateTime(2014, 8, 1),
+      Subject     = "Part-time - Administrative assistant",
+      Description = "My first job, it was a small business close to home, I did a little bit of everything, helping out with anything.",
+      Location    = "Caxias do Sul"
+    },
+    new Experience
+    {
+      Institution  = "Effective Business Management",
+      IniDate      = new DateTime(2015, 9, 1),
+      FinDate      = new DateTime(2018, 5, 1),
+      Subject      = "Fulltime - Full stack .NET developer",
+      Description  = "Here I started my career as developer, I started as a trainee and spent 3 years creating applications with .NET, the company was starting to migrate its ERP from Oracle Forms to the web and my team was responsible for that. I learned a lot from my co-wrkers.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "effectiveerp.com.br",
+      RefLink      = "https://effectiveerp.com.br"
+    },
+    new Experience
+    {
+      Institution  = "AgileWork",
+      IniDate      = new DateTime(2018, 7, 1),
+      FinDate      = new DateTime(2018, 10, 1),
+      Subject      = "Fulltime - Full stack .NET developer",
+      Description  = "I was unhappy with my income at Effective, I received a few offers from other companies and accepted this one, but I didn't fit my team leader mindset. During this time I had one single project, it was an ASO, an interface to the doctor from occupational medicine register the patient's situation.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "agilework.com.br",
+      RefLink      = "http://www.agilework.com.br"
+    },
+    new Experience
+    {
+      Institution  = "SIGE Cloud",
+      IniDate      = new DateTime(2019, 3, 1),
+      FinDate      = new DateTime(2021, 11, 1),
+      Subject      = "Fulltime - Full stack .NET developer",
+      Description  = "Things got a little more interesting, working at SIGE I had more leverage, I worked on projects where I had almost total control over technologies and project structure, acting as product owner and lead developer.",
+      Location     = "Caxias do Sul",
+      RefLinkLabel = "sigecloud.com.br",
+      RefLink      = "https://www.sigecloud.com.br"
+    }
+};
+
+  var skills = new Skill[]
+  {
+    new Skill("C#", 5, new [] { Tag.Language, Tag.ProgramingLanguage, Tag.Csharp, Tag.Backend }),
+    new Skill(".NET Framework", 5, new [] { Tag.Framework, Tag.Csharp, Tag.Backend }),
+    new Skill(".NET Core", 5, new [] { Tag.Framework, Tag.Csharp, Tag.Backend }),
+    new Skill("JavaScript", 5, new [] { Tag.Language, Tag.ProgramingLanguage, Tag.Js, Tag.Frontend }),
+    new Skill("jQuery", 5, new [] { Tag.Framework, Tag.Js, Tag.Frontend }),
+    new Skill("AngularJS", 2, new [] { Tag.Framework, Tag.Js, Tag.Frontend }),
+    new Skill("CSS", 5, new [] { Tag.Language, Tag.Frontend }),
+    new Skill("SCSS", 5, new [] { Tag.Language, Tag.Frontend }),
+    new Skill("HTML", 5, new [] { Tag.Language, Tag.Frontend }),
+    new Skill("SQL", 4, new [] { Tag.Language, Tag.Backend, Tag.Db, Tag.Sql }),
+    new Skill("Oracle DB", 4, new [] { Tag.Backend, Tag.Db, Tag.Sql }),
+    new Skill("SQLite DB", 4, new [] { Tag.Backend, Tag.Db, Tag.Sql }),
+    new Skill("Firebird DB", 1, new [] { Tag.Backend, Tag.Db, Tag.Sql }),
+    new Skill("PL/SQL", 1, new [] { Tag.Language, Tag.Backend, Tag.Db, Tag.Sql }),
+    new Skill("NoSQL", 4, new [] { Tag.Backend, Tag.Db, Tag.NoSql }),
+    new Skill("Mongo DB", 4, new [] { Tag.Backend, Tag.Db, Tag.NoSql }),
+    new Skill("Lite DB", 4, new [] { Tag.Backend, Tag.Db, Tag.NoSql }),
+    new Skill("MongoDB C#/.NET Driver", 5, new [] { Tag.Backend, Tag.Db, Tag.NoSql, Tag.Framework, Tag.Csharp }),
+    new Skill("TypeScript", 5, new [] { Tag.Frontend, Tag.Language, Tag.ProgramingLanguage, Tag.Js, Tag.Ts }),
+    new Skill("Angular", 5, new [] { Tag.Frontend, Tag.Framework, Tag.Js, Tag.Ts }),
+    new Skill("Ionic TS", 4, new [] { Tag.Frontend, Tag.Framework, Tag.Js, Tag.Ts }),
+    new Skill("Material", 3, new [] { Tag.Frontend, Tag.Framework, Tag.Js, Tag.Ts }),
+    new Skill("React", 1, new [] { Tag.Frontend, Tag.Framework, Tag.Js, Tag.Ts }),
+    new Skill("Electron", 3, new [] { Tag.Frontend, Tag.Framework }),
+    new Skill("Golang", 0, new [] { Tag.Backend, Tag.Language, Tag.ProgramingLanguage }),
+    new Skill("NSIS Script", 1, new [] { Tag.Language, Tag.ProgramingLanguage }),
+    new Skill("PWA", 3, new [] { Tag.Concept }),
+    new Skill("WPF", 1, new [] { Tag.Csharp, Tag.Frontend, Tag.Framework }),
+    new Skill("Windows Forms", 1, new [] { Tag.Csharp, Tag.Frontend, Tag.Framework }),
+    new Skill("REST API", 5, new [] { Tag.Concept }),
+    new Skill("Micro Services", 1, new [] { Tag.Concept }),
+    new Skill("Git", 4, new [] { Tag.VersionControlSystem, Tag.CLI }),
+    new Skill("Tortoise", 2, new [] { Tag.VersionControlSystem }),
+    new Skill("Ankh", 1, new [] { Tag.VersionControlSystem }),
+    new Skill("Team Foundation Service", 1, new [] { Tag.VersionControlSystem }),
+    new Skill("NPM", 5, new [] { Tag.PackageManager, Tag.CLI }),
+    new Skill("Nuget", 5, new [] { Tag.PackageManager }),
+    new Skill("Libman", 1, new [] { Tag.PackageManager }),
+    new Skill("S3", 4, new [] { Tag.Backend, Tag.Cloud, Tag.Amazon }),
+    new Skill("EC2", 2, new [] { Tag.Backend, Tag.Cloud, Tag.Amazon }),
+    new Skill("CloudFront", 1, new [] { Tag.Cloud, Tag.Amazon }),
+    new Skill("ElastiCache", 1, new [] { Tag.Backend, Tag.Cloud, Tag.Amazon, Tag.NoSql }),
+    new Skill("Redis", 1, new [] { Tag.Backend, Tag.Db, Tag.NoSql }),
+    new Skill("Scrum", 3, new [] { Tag.Concept }),
+    new Skill("Kanban", 5, new [] { Tag.Concept }),
+    new Skill("Bootstrap", 4, new [] { Tag.Frontend, Tag.Framework, Tag.Js }),
+    new Skill("JSON", 5, new [] { Tag.DataStructure }),
+    new Skill("BSON", 3, new [] { Tag.DataStructure }),
+    new Skill("XML", 3, new [] { Tag.DataStructure }),
+    new Skill("CMD", 3, new [] { Tag.CLI }),
+    new Skill("Bash", 3, new [] { Tag.CLI }),
+    new Skill("PowerShell", 3, new [] { Tag.CLI }),
+    new Skill("MVC", 5, new [] { Tag.Concept, Tag.CodePattern }),
+    new Skill("Factory", 5, new [] { Tag.Concept, Tag.CodePattern }),
+    new Skill("Object Orientated Programming", 5, new [] { Tag.Concept }),
+    new Skill("SEO", 1, new [] { Tag.Concept }),
+    new Skill("Singleton", 5, new [] { Tag.Concept, Tag.CodePattern }),
+    new Skill("Dependency Injection", 4, new [] { Tag.Concept, Tag.CodePattern }),
+    new Skill("SOLID", 3, new [] { Tag.Concept, Tag.CodePattern })
+  };
+
+  var languages = new Skill[]
+  {
+      new Skill("Brazilian Portuguese (native)", 4),
+      new Skill("English (daily use reading, listening and writing)", 3)
+  };
+
+  var tools = new Skill[]
+  {
+    new Skill("Windows", 5),
+    new Skill("Ubuntu", 3),
+    new Skill("MAC OS", 1),
+    new Skill("Visual Studio", 5),
+    new Skill("Visual Studio Code", 5),
+    new Skill("Notepad++", 5),
+    new Skill("Firefox", 5),
+    new Skill("Webkit browsers", 5),
+    new Skill("Github", 5),
+    new Skill("Gimp", 1),
+    new Skill("Green Fish Icon Editor", 4),
+    new Skill("Barrier", 5),
+    new Skill("Ditto Clipboard Manager", 5),
+    new Skill("Atlassian / Jira", 4),
+    new Skill("New Relic", 4),
+    new Skill("Robo 3T", 4),
+    new Skill("Toad", 2),
+    new Skill("SQL Developer", 1),
+    new Skill("ReSharper", 5),
+    new Skill("DataGrip", 5),
+    new Skill("DBeaver", 5),
+    new Skill("WSL", 2),
+    new Skill("Windows Terminal", 2),
+    new Skill("Slack", 5),
+    new Skill("ShareX", 5),
+    new Skill("LightShot", 4),
+    new Skill("LiteDB Studio", 5)
+  };
+
+  var projects = new Project[]
+  {
+    new Project
+    {
+      Name = "SIGE Mobi",
+      Image = "~/assets/sige-mobi.jpg",
+      Description = "APP for Android and IOS was created to allow mobile access to some of the essential functions of the ERP, such as creating orders, controlling stocks, sharing a budget, or even consulting financial indicators. All this works online and offline and synchronizes all data between other SIGE applications. It reached over 10,000 users and was running with around 500 simultaneous users.",
+      Ref = "https://www.sigecloud.com.br/app-de-vendas-integrado-ao-erp"
+    },
+    new Project
+    {
+      Name = "SIGE Loja",
+      Image = "~/assets/sige-loja.jpg",
+      Description = "Low cost white label e-commerce for small businesses, it has many customizations, the entire back office is synchronized with SIGE's ERP, it has multiple layouts, multiple payment and shipping integrations. It has more than 1,000 different active e-commerce, take a look at some I have chose: <br/><a href='https://gabbiatti.sigeloja.com.br' target='blank'><i class='fas fa-external-link-alt'></i> Gabbiatti Confecções</a><br/><a href='https://trinitysupply.com.br' target='blank'><i class='fas fa-external-link-alt'></i> Trinity Supply</a><br/><a href='https://tabalacaria.com.br' target='blank'><i class='fas fa-external-link-alt'></i> Talabacaria</a><br/><a href='https://alojabebe.com.br' target='blank'><i class='fas fa-external-link-alt'></i> BabyStore</a>",
+      Ref = "https://sigeloja.com.br"
+    },
+    new Project
+    {
+      Name = "SIGE Talk",
+      Image = "~/assets/sige-talk.jpg",
+      Description = "With the chat, SIGE's client companies can have a closed communication between the company's employees, having the possibility to take actions in the ERP directly from the chat, the chat can also be used as a call center for SIGE Loja. Talk is built using an open source code from Mattermost.",
+      Ref = "https://www.sigecloud.com.br/chat-empresarial-integrado-ao-erp"
+    }
+  };
+}
+<div class="jumbotron" data-src="/view/images/highway_animation.gif">
+  <div class="overlay">
+    <div class="container container-xxl">
+      <h1>Wilian Webber Rech</h1>
+      <p class="lead">Web Resume</p>
+    </div>
+    <a href="#profile" class="scroll-down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+  <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#profile">Profile</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#abilities">Abilities</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="copycat">
+  <img src="https://media3.giphy.com/media/Cf9GJn8c4vkklSAbGU/giphy.gif?cid=790b7611001360def9f7f7a82badd26279ae95428921a1df&rid=giphy.gif&ct=g" alt="Me copying Pascal van Gemert" loading="lazy" />
+  <a href="http://www.pascalvangemert.nl/" target="_blank">
+    <i class="fas fa-external-link-alt"></i>
+    <span> Thanks to the theme's creator, Pascal van Gemert.</span>
+  </a>
+  <a href="https://dribbble.com/peterhenderson" target="_blank">
+    <i class="fas fa-external-link-alt"></i>
+    <span> Thanks to Peter Henderson for the coding gif.</span>
+  </a>
+  <a href="http://www.pascalvangemert.nl/" target="_blank" class="tab">
+    <img src="~/assets/copycat.webp" alt="I'm using copycat'" />
+  </a>
+</div>
+<div class="background-white">
+  <div id="profile" class="container container-xxl">
+    <h2>Profile</h2>
+    <p class="lead">I'm a full stack .NET developer</p>
+    <hr>
+    <div class="row align-items-center text-center">
+      <div class="col-xl-4">
+        <h3>About me</h3>
+        <p>
+          I'm a senior programmer, I've worked with a lot of different technologies, my strongest ones are C#/JS/TS/CSS/HTML. I always stand for quality. I love spending time creating and structuring new solutions. I prefer to work in a team, as multiple points of view on a problem lead to a better solution.
+        </p>
+      </div>
+      <div class="col-xl-4 text-center profile-picture">
+        <img src="~/assets/profile-picture.jpg" alt="Wilian Webber Rech" width="246" height="246">
+      </div>
+      <div class="col-xl-4">
+        <h3>Details</h3>
+        <p>
+          <strong>Name:</strong><br>
+          <span>Wilian Webber Rech</span><br>
+          <strong>Age:</strong><br>
+          <span>@Utils.GetMyAge() years</span><br>
+          <strong>Location:</strong><br>
+          <span data-bs-toggle="tooltip" title="Last time I checked I was in Caxias do Sul, Brazil">Lost somewhere in this reality</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="experiences" class="container container-xxl">
+  <h2>Experiences</h2>
+  <p class="lead">
+    I don't have a favorite book, but I think everyone should read<br> The Road to Serfdom - Friedrich Hayek
+  </p>
+  <hr>
+  <h3>Educations</h3>
+  <div class="experiences">
+    @foreach (var education in educations)
+    {
+      <partial name="_ExperiencePartial" model="education" />
+    }
+  </div>
+  <hr>
+  <h3>Small courses</h3>
+  <div class="experiences">
+    @foreach (var course in courses)
+    {
+      <partial name="_ExperiencePartial" model="course" />
+    }
+  </div>
+  <hr>
+  <h3>Careers</h3>
+  <div class="experiences">
+    @foreach (var career in careers)
+    {
+      <partial name="_ExperiencePartial" model="career" />
+    }
+  </div>
+</div>
+<div class="background-white">
+  <div id="abilities" class="container container-xxl">
+    <h2>Abilities</h2>
+    <p class="lead">
+      “I know that I know nothing.”<br>- Socrates
+    </p>
+    <hr>
+    <h3>Skills</h3>
+    <div class="tags">
+      @foreach (var tag in skills.SelectMany(x => x.Tags).Distinct().OrderBy(x => x.ToString()))
+      {
+        <label class="tag">
+          <input type="checkbox" data-tag="@tag" />
+          <span>@tag</span>
+        </label>
+      }
+    </div>
+    <ul class="no-bullets">
+      @foreach (var skill in skills.OrderByDescending(x => x.Score).ThenBy(x => x.Name))
+      {
+        <partial name="_SkillPartial" model="skill" />
+      }
+    </ul>
+    <div class="text-center project-referal">
+      <p>This project is build on a MVC .NET project.</p>
+      <a href="https://github.com/wilianwrech/resume" class="btn btn-primary" target="_blank">See project on Github</a>
+    </div>
+    <hr>
+    <h3>Languages</h3>
+    <ul class="no-bullets">
+      @foreach (var language in languages.OrderByDescending(x => x.Score).ThenBy(x => x.Name))
+      {
+        <partial name="_SkillPartial" model="language" />
+      }
+    </ul>
+    <hr>
+    <h3>Tools</h3>
+    <ul class="no-bullets">
+      @foreach (var tool in tools.OrderByDescending(x => x.Score).ThenBy(x => x.Name))
+      {
+        <partial name="_SkillPartial" model="tool" />
+      }
+    </ul>
+  </div>
+</div>
+<div id="projects" class="container container-xxl">
+  <h2>Projects</h2>
+  <p class="lead">
+    “If I had asked people what they wanted, they would have said faster horses. ”<br>- Henry Ford
+  </p>
+  <hr>
+  <div class="row">
+    @foreach (var project in projects)
+    {
+      <partial name="_ProjectPartial" model="project" />
+    }
+  </div>
+</div>
+<div class="background-gray">
+  <div id="contact" class="container container-xxl">
+    <h2>Contact</h2>
+    <p class="lead">
+      “The aim of argument, or of discussion, should not be victory, but progress.”<br>- Joseph Joubert
+    </p>
+    <hr>
+    <ul class="no-bullets row">
+      <li class="col-lg-4">
+        <a href="mailto:wilianwrech@hotmail.com">
+          <i class="fas fa-envelope"></i>
+          <span>wilianwrech@hotmail.com</span>
+        </a>
+      </li>
+      <li class="col-lg-4">
+        <a href="https://www.linkedin.com/in/wilianwrech/" target="_blank" data-bs-toggle="tooltip" title="I swear some day I will fix it">
+          <i class="fab fa-linkedin"></i>
+          <span>in/wilianwrech</span>
+        </a>
+      </li>
+      <li class="col-lg-4">
+        <a>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram-square"></i>
+          <span>I really don't like using social media 😬</span>
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+</div>
