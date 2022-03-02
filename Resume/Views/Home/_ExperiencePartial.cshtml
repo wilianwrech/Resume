@@ -11,6 +11,12 @@
       {
         <span data-bs-toggle="tooltip" title="I was @Utils.GetMyAge(Model.IniDate) years old">@Model.IniDate.Year</span>
       }
+      else if (Model.FinDate.Value.Date == DateTime.Now.Date)
+      {
+        <span data-bs-toggle="tooltip" title="I was @Utils.GetMyAge(Model.IniDate) years old">
+          @Model.IniDate.ToString("MMM yyyy").FirstCharToUpper() - Current
+        </span>
+      }
       else
       {
         <span data-bs-toggle="tooltip" title="I was @Utils.GetMyAge(Model.IniDate) to @Utils.GetMyAge(Model.FinDate) years old">
