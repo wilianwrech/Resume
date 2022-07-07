@@ -1,22 +1,8 @@
-﻿using System;
+﻿namespace Resume.Models;
 
-namespace Resume.Models
+public record Skill(string Name, int Score, Tag[] Tags)
 {
-    public class Skill
-    {
-        public Skill() { }
-
-        public Skill(string name, int score)
-        {
-            Name = name;
-            Score = score;
-        }
-
-        public Skill(string name, int score, Tag[] tags) : this(name, score) => Tags = tags;
-
-        public string Name { get; set; }
-        private int _score;
-        public int Score { get => _score; set => _score = value > 5 ? 5 : value < 0 ? 0 : value; }
-        public Tag[] Tags { get; set; } = Array.Empty<Tag>();
-    }
+    public Skill(string name, int score) : this(name, score, Array.Empty<Tag>()) { }
+    
+    public int Score { get; } = Score > 5 ? 5 : Score < 0 ? 0 : Score;
 }

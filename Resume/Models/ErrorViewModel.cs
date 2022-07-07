@@ -1,8 +1,6 @@
-namespace Resume.Models
+namespace Resume.Models;
+
+public record ErrorViewModel(string RequestId)
 {
-    public class ErrorViewModel
-    {
-        public string RequestId { get; set; }
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }
